@@ -21,5 +21,5 @@ The status can be either idle, running, finished or errorred in which case they 
 
 The socket will timeout after 60 seconds.
 
-
+To Run: java -jar zeiss.jar
 To test: http://localhost:8080/api, only shows all machines current status
