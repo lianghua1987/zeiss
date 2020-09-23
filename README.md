@@ -20,3 +20,6 @@ Currently, there is only a websocket connection which allows receiving a soft-re
 The status can be either idle, running, finished or errorred in which case they will be repaired automatically and a repaired event will be sent before resetting to idle again.
 
 The socket will timeout after 60 seconds.
+
+
+To test: http://localhost:8080/api, only shows all machines current status
