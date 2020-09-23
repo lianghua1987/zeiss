@@ -1,8 +1,9 @@
 
-API Documentation
-WEBSOCKET (ws) /ws
+## API Documentation
+
 Currently, there is only a websocket connection which allows receiving a soft-realtime event stream of machine status updates. The endpoint’s full url is: ws://machinestream.herokuapp.com/ws, the response looks like this:
 
+```json
 {
   "topic": "events",
   "ref": null,
@@ -14,6 +15,8 @@ Currently, there is only a websocket connection which allows receiving a soft-re
   },
   "event": "new"
 }
+```
+
 The status can be either idle, running, finished or errorred in which case they will be repaired automatically and a repaired event will be sent before resetting to idle again.
 
 The socket will timeout after 60 seconds.
